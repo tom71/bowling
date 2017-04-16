@@ -13,6 +13,8 @@ import static org.testng.AssertJUnit.assertEquals;
  */
 public class BowlingResultsTest {
 
+    // create different rounds with strikes, spares and without extra points
+
     @DataProvider
     public static Object[][] data() {
         int[] frame1 = {1, 4};

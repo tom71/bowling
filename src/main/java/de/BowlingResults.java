@@ -23,9 +23,9 @@ public class BowlingResults {
             roll1 = 0;
             roll2 = 0;
 
-            int[] frame = (int[]) frames.get(i);
+            int[] frame = (int[]) frames.get(i); // current frame
 
-            if(frame.length>0)
+            if (frame.length > 0)
                 roll1 = frame[0];
 
             if (frame.length > 1)
@@ -35,21 +35,24 @@ public class BowlingResults {
             result += roll2;
 
 
-            if (hasSpare) {
+            if (hasSpare) { // previous round was an spare ?
                 result += roll1;
                 hasSpare = false;
             }
 
 
-            if (hasStrike) {
+            if (hasStrike) { // previous round was an strike ?
                 result += (roll1 + roll2);
                 hasStrike = false;
             }
 
-            if (roll1 == 10)
+            // this round was an strike or spare ?
+            if (roll1 == 10) {
                 hasStrike = true;
-            else if ((roll1 + roll2) == 10)
+            }
+            else if ((roll1 + roll2) == 10) {
                 hasSpare = true;
+            }
 
 
         }
