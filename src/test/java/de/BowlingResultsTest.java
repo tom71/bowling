@@ -82,6 +82,10 @@ public class BowlingResultsTest {
         frames8.add(frame18);
         frames9.add(frame9);
 
+        List frames10 = new ArrayList();
+        for(int i=0; i<10; i++)
+            frames10.add(frame9);
+
         return new Object[][]{
                 {frames1, 133},
                 {frames2, 157},
@@ -92,13 +96,14 @@ public class BowlingResultsTest {
                 {frames7, 101},
                 {frames8, 129},
                 {frames9, 127},
+                {frames10, 300}
         };
     }
 
     @Test(dataProvider = "data")
     public void testComputeResult(List frames, int expectedResult) throws Exception {
         BowlingResults computer = new BowlingResults();
-        int result = computer.computeResult(frames);
+        int result = computer.computeResult2(frames);
         assertEquals(expectedResult, result);
     }
 
