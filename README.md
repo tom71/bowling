@@ -8,7 +8,7 @@ mvn clean package
 
 After build you can start the app with:
 ```
-java -jar target/cristo-1.0-SNAPSHOT.jar
+java -jar target/bowling.jar
 ```
 ###Example
 ```
