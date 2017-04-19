@@ -14,15 +14,16 @@ java -jar target/cristo-1.0-SNAPSHOT.jar
 ```
 Ergebniseingabe (Werte mit , trennen. Strikes mit einer einzelnen 10 eingeben)
 
-Runde 1:10
-Runde 2:10
-Runde 3:10
-Runde 4:10
+Runde 1:1,4
+Runde 2:4,5
+Runde 3:6,4
+Runde 4:5,5
 Runde 5:10
-Runde 6:10
-Runde 7:10
-Runde 8:10
+Runde 6:0,1
+Runde 7:7,3
+Runde 8:6,4
 Runde 9:10
-Runde 10:10
-Du hast 270 Punkte erreicht!
+Runde 10:2,8,6
+
+Du hast 133 Punkte erreicht!
 ```
