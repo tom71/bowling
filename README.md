@@ -1,4 +1,4 @@
-### compute bowling results
+### Compute bowling results
 This is an simple program to compute bowling results.
 
 Checkout and build with maven. 
@@ -10,7 +10,7 @@ After build you can start the app with:
 ```
 java -jar target/bowling.jar
 ```
-###Example
+### Example
 ```
 Ergebniseingabe (Werte mit , trennen. Strikes mit einer einzelnen 10 eingeben)
 
